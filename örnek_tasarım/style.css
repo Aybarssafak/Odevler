@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #588157;
+}
+
+
+
+header{
+    background: #a3b18a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.01);
+    z-index: 100;
+}
+
+.logo i{
+    font-size: 35px;
+}
+
+.logo{
+    display: flex;
+    gap: 15px;
+}
+
+.logo h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(46, 120, 150);
+}
+input{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 100px;
+        background: white;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    nav a:nth-child(1){
+        margin-top: 58px;
+    }
+    label{
+        width: 45px;
+        height: 30px;
+        position: relative;
+    }
+    label div{
+        width: 100%;
+        height: 5px;
+        background: black;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+    label div:nth-child(1) {
+        top: 0;
+    }
+    label div:nth-child(2) {
+        top: 50%;
+    }
+    label div:nth-child(3) {
+        top: 100%;
+    }
+    input:checked + header nav{
+        height: 100vh;
+    }
+
+}
+
+.hosgeldiniz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 190px;
+    padding-left: 100px;
+    padding-right: 200px;
+    margin-bottom: 100px;
+    height: 500px;
+}
+
+.hosgeldiniz .baslik{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+}
+
+.hosgeldiniz .baslik h1{
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+.hosgeldiniz .baslik .iletişim-button{
+    background: #dad7cd;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.hosgeldiniz .baslik .iletişim-button:hover{
+    background: #343a40;
+    color: white;
+}
+
+.hosgeldiniz .resim{
+    width: 400px;
+    height: 250px;
+}
+.hosgeldiniz .resim img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.subelerimiz {
+    display: flex;
+    flex-direction: column;
+    padding-top: 190px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+.subelerimiz h1{
+    padding-left: 500px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+.subelerimiz .resimler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1150px;
+}
+/* Resimler */
+.subelerimiz .resimler .r1 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r1 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r1 img{
+    width: 194px;
+    height: 259px;
+}
+
+.subelerimiz .resimler .r2 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r2 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r2 img{
+    width: 194px;
+    height: 259px;
+}
+
+.subelerimiz .resimler .r3 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r3 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r3 img{
+    width: 194px;
+    height: 259px;
+}
+
+.subelerimiz .resimler .r4 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r4 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r4 img{
+    width: 194px;
+    height: 259px;
+}
+/* Resimler Son */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1150px;
+}
+
+.form h2{
+    height: 10px;
+    width: 200px;
+}
+
+.form ::placeholder{
+    font-weight: bolder;
+    color: gray;
+}
+
+.form input[type=text]{
+    height: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.form input[type=email]{
+    height: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+@media (max-width: 1024px) {
+    .hosgeldiniz{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 190px;
+        padding-left: 100px;
+        gap: 30px;
+        padding-right: 100px;
+        height: 550px;
+    }
+    .hosgeldiniz .resim{
+        width: 400px;
+        height: 250px;
+        margin-left: 20px;
+    }
+    .hosgeldiniz .resim img{
+        width: 400px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .hosgeldiniz .baslik{
+        display: flex;
+        flex-direction: column;
+        font-size:20px;
+        font-weight: bold;
+        width: 500px;
+    }
+    .hosgeldiniz .baslik h1{
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    .subelerimiz {
+        display: flex;
+        flex-direction: column;
+        padding-top: 190px;
+        padding-left: 50px;
+        margin-bottom: 100px;
+    }
+    .subelerimiz h1{
+        padding-left: 330px;
+        padding-bottom: 50px;
+        font-size: 50px;
+    }
+    .subelerimiz .resimler {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 900px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .hosgeldiniz{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-top: 750px;
+        gap: 30px;
+        padding-left: 50px;
+    }
+    .hosgeldiniz .resim{
+        width: 400px;
+        height: 250px;
+        margin-left: 120px;
+    }
+    .hosgeldiniz .resim img{
+        width: 400px;
+        height: 250px;
+    }
+    .hosgeldiniz .baslik{
+        margin-top: 50px;
+        font-size: 17px;
+        margin-left: 50px;
+        align-items: center;
+    }
+    .hosgeldiniz .baslik .iletişim-button{
+        background: #dad7cd;
+        border: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 17px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 90px;
+    }
+
+    .subelerimiz {
+        display: flex;
+        flex-direction: column;
+        padding-top: 190px;
+        padding-left: 10px;
+        margin-bottom: 100px;
+    }
+    .subelerimiz h1{
+        padding-left: 200px;
+        padding-bottom: 50px;
+        font-size: 50px;
+    }
+    .subelerimiz .resimler {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+        grid-gap: 15px;
+        width: 650px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hosgeldiniz{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-top: 630px;
+        gap: 30px;
+        padding-left: 50px;
+    }
+    .hosgeldiniz .resim{
+        width: 250px;
+        height: 250px;
+        margin-left: 80px;
+    }
+    .hosgeldiniz .resim img{
+        width: 250px;
+        height: 250px;
+    }
+    .hosgeldiniz .baslik{
+        width: 400px;
+        margin-top: 20px;
+        font-size: 15px;
+        margin-left: 1px;
+        align-items: center;
+    }
+    .subelerimiz {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 150px;
+        margin-bottom: 100px;
+    }
+    .subelerimiz h1{
+        padding-left: 1px;
+        padding-bottom: 50px;
+        font-size: 40px;
+    }
+    .subelerimiz .resimler {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        width: 300px;
+    }
+}
