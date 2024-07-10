@@ -226,12 +226,16 @@ input{
     height: 259px;
 }
 /* Resimler Son */
-.form{
+.iletisim .form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 1150px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+
+.iletisim .form input {
+    display: flex;
 }
 
 .form h2{
