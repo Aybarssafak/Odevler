@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +11,6 @@
 body{
     background: #588157;
 }
-
-
 
 header{
     background: #a3b18a;
@@ -25,26 +24,21 @@ header{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.01);
     z-index: 100;
 }
-
 .logo i{
     font-size: 35px;
 }
-
 .logo{
     display: flex;
     gap: 15px;
 }
-
 .logo h1{
     font-size: 35px;
     font-weight: 800;
 }
-
 nav{
     display: flex;
     gap: 50px;
 }
-
 nav a{
     text-decoration: none;
     color: black;
@@ -52,26 +46,24 @@ nav a{
     font-weight: bold;
     transition: 0.3s;
 }
-
 nav a:hover {
     color: rgb(46, 120, 150);
 }
 input{
     display: none;
 }
-
 @media (max-width: 768px) {
     nav {
         position: absolute;
         top: 100px;
-        background: white;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        height: 0;
         transition: 0.5s;
         overflow: hidden;
+        background: white;
+        flex-direction: column;
+        left: 0;
+        align-items: center;
+        width: 100%;
+        height: 0;
     }
     nav a:nth-child(1){
         margin-top: 58px;
@@ -100,7 +92,6 @@ input{
     input:checked + header nav{
         height: 100vh;
     }
-
 }
 
 .hosgeldiniz{
@@ -113,7 +104,6 @@ input{
     margin-bottom: 100px;
     height: 500px;
 }
-
 .hosgeldiniz .baslik{
     display: flex;
     flex-direction: column;
@@ -122,13 +112,11 @@ input{
     font-weight: bold;
     width: 500px;
 }
-
 .hosgeldiniz .baslik h1{
     align-items: center;
     justify-content: center;
     padding-left: 70px;
 }
-
 .hosgeldiniz .baslik .iletişim-button{
     background: #dad7cd;
     border: none;
@@ -144,7 +132,6 @@ input{
     background: #343a40;
     color: white;
 }
-
 .hosgeldiniz .resim{
     width: 400px;
     height: 250px;
@@ -154,160 +141,6 @@ input{
     height: 250px;
     border-radius: 10px;
 }
-
-.subelerimiz {
-    display: flex;
-    flex-direction: column;
-    padding-top: 190px;
-    padding-left: 100px;
-    margin-bottom: 100px;
-}
-.subelerimiz h1{
-    padding-left: 500px;
-    padding-bottom: 50px;
-    font-size: 50px;
-}
-.subelerimiz .resimler {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1150px;
-}
-/* Resimler */
-.subelerimiz .resimler .r1 {
-    width: 194px;
-    height: 259px;
-    position: relative; 
-}
-.subelerimiz .resimler .r1 h3 {
-    position: absolute;
-}
-.subelerimiz .resimler .r1 img{
-    width: 194px;
-    height: 259px;
-}
-
-.subelerimiz .resimler .r2 {
-    width: 194px;
-    height: 259px;
-    position: relative; 
-}
-.subelerimiz .resimler .r2 h3 {
-    position: absolute;
-}
-.subelerimiz .resimler .r2 img{
-    width: 194px;
-    height: 259px;
-}
-
-.subelerimiz .resimler .r3 {
-    width: 194px;
-    height: 259px;
-    position: relative; 
-}
-.subelerimiz .resimler .r3 h3 {
-    position: absolute;
-}
-.subelerimiz .resimler .r3 img{
-    width: 194px;
-    height: 259px;
-}
-
-.subelerimiz .resimler .r4 {
-    width: 194px;
-    height: 259px;
-    position: relative; 
-}
-.subelerimiz .resimler .r4 h3 {
-    position: absolute;
-}
-.subelerimiz .resimler .r4 img{
-    width: 194px;
-    height: 259px;
-}
-/* Resimler Son */
-.iletisim {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 100px;
-    margin-bottom: 20px;
-    gap: 10px;
-}
-.iletisim .form form{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-left: 50px;
-    margin-right: 60px;
-}
-
-.iletisim .form input {
-    display: flex;
-}
-
-.başlik h1 {
-    font-size: 40px;
-    align-items: center;
-    margin-left: 500px;
-}
-
-.form h2{
-    height: 10px;
-    width: 200px;
-}
-
-.form ::placeholder{
-    font-weight: bolder;
-    color: gray;
-}
-
-.form input[type=text]{
-    height: 30px;
-    width: 400px;
-    border-radius: 8px;
-}
-
-.form input[type=email]{
-    height: 30px;
-    width: 400px;
-    border-radius: 8px;
-}
-
-.form .iletişim-button{
-    background: #dad7cd;
-    border: none;
-    width: 100px;
-    height: 30px;
-    border-radius: 20px;
-    font-size: 17px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 150px;
-}
-.form .iletişim-button:hover{
-    background: #343a40;
-    color: white;
-}
-
-.tel_email{
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    margin-top: 50px;
-    margin-right: 40px;
-}
-.tel{
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-.email{
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 @media (max-width: 1024px) {
     .hosgeldiniz{
         display: flex;
@@ -341,50 +174,6 @@ input{
         justify-content: center;
         padding-left: 10px;
     }
-
-    .subelerimiz {
-        display: flex;
-        flex-direction: column;
-        padding-top: 190px;
-        padding-left: 50px;
-        margin-bottom: 100px;
-    }
-    .subelerimiz h1{
-        padding-left: 330px;
-        padding-bottom: 50px;
-        font-size: 50px;
-    }
-    .subelerimiz .resimler {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 900px;
-    }
-    .iletisim {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 100px;
-        margin-bottom: 20px;
-        gap: 10px;
-    }
-    .başlik h1 {
-        font-size: 40px;
-        align-items: center;
-        margin-left: 400px;
-    }
-    .form input[type=text]{
-        height: 30px;
-        width: 400px;
-        border-radius: 8px;
-    }
-    
-    .form input[type=email]{
-        height: 30px;
-        width: 400px;
-        border-radius: 8px;
-    }
-    
 }
 @media (max-width: 768px) {
     .hosgeldiniz{
@@ -422,52 +211,7 @@ input{
         margin-left: 10px;
         margin-right: 90px;
     }
-
-    .subelerimiz {
-        display: flex;
-        flex-direction: column;
-        padding-top: 190px;
-        padding-left: 10px;
-        margin-bottom: 100px;
-    }
-    .subelerimiz h1{
-        padding-left: 200px;
-        padding-bottom: 50px;
-        font-size: 50px;
-    }
-    .subelerimiz .resimler {
-        display: grid;
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 300px 300px;
-        grid-gap: 15px;
-        width: 650px;
-    }
-    .iletisim {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 50px;
-        margin-bottom: 20px;
-        gap: 10px;
-    }
-    .başlik h1 {
-        font-size: 40px;
-        align-items: center;
-        margin-left: 300px;
-    }
-    .form input[type=text]{
-        height: 30px;
-        width: 400px;
-        border-radius: 8px;
-    }
-    
-    .form input[type=email]{
-        height: 30px;
-        width: 400px;
-        border-radius: 8px;
-    }
 }
-
 @media (max-width: 500px) {
     .hosgeldiniz{
         display: flex;
@@ -493,6 +237,119 @@ input{
         margin-left: 1px;
         align-items: center;
     }
+}
+
+.subelerimiz {
+    display: flex;
+    flex-direction: column;
+    padding-top: 190px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+.subelerimiz h1{
+    padding-left: 500px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+.subelerimiz .resimler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1150px;
+}
+/* Resimler */
+.subelerimiz .resimler .r1 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r1 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r1 img{
+    width: 194px;
+    height: 259px;
+}
+.subelerimiz .resimler .r2 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r2 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r2 img{
+    width: 194px;
+    height: 259px;
+}
+.subelerimiz .resimler .r3 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r3 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r3 img{
+    width: 194px;
+    height: 259px;
+}
+.subelerimiz .resimler .r4 {
+    width: 194px;
+    height: 259px;
+    position: relative; 
+}
+.subelerimiz .resimler .r4 h3 {
+    position: absolute;
+}
+.subelerimiz .resimler .r4 img{
+    width: 194px;
+    height: 259px;
+}
+/* Resimler Son */
+@media (max-width: 1024px) {
+    .subelerimiz {
+        display: flex;
+        flex-direction: column;
+        padding-top: 190px;
+        padding-left: 50px;
+        margin-bottom: 100px;
+    }
+    .subelerimiz h1{
+        padding-left: 330px;
+        padding-bottom: 50px;
+        font-size: 50px;
+    }
+    .subelerimiz .resimler {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subelerimiz {
+        display: flex;
+        flex-direction: column;
+        padding-top: 190px;
+        padding-left: 10px;
+        margin-bottom: 100px;
+    }
+    .subelerimiz h1{
+        padding-left: 200px;
+        padding-bottom: 50px;
+        font-size: 50px;
+    }
+    .subelerimiz .resimler {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+        grid-gap: 15px;
+        width: 650px;
+    }
+}
+@media (max-width: 500px) {
     .subelerimiz {
         display: flex;
         flex-direction: column;
@@ -511,7 +368,135 @@ input{
         margin-left: 15px;
         width: 300px;
     }
+}
 
+.iletisim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.iletisim .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+.iletisim .form input {
+    display: flex;
+}
+.başlik h1 {
+    font-size: 40px;
+    align-items: center;
+    margin-left: 500px;
+}
+.form h2{
+    height: 10px;
+    width: 200px;
+}
+.form ::placeholder{
+    font-weight: bolder;
+    color: gray;
+}
+.form input[type=text]{
+    height: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+.form input[type=email]{
+    height: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+.form .iletişim-button{
+    background: #dad7cd;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.form .iletişim-button:hover{
+    background: #343a40;
+    color: white;
+}
+.tel_email{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.tel{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.email{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 1024px) {
+    .iletisim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 100px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .başlik h1 {
+        font-size: 40px;
+        align-items: center;
+        margin-left: 400px;
+    }
+    .form input[type=text]{
+        height: 30px;
+        width: 400px;
+        border-radius: 8px;
+    }
+    .form input[type=email]{
+        height: 30px;
+        width: 400px;
+        border-radius: 8px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .iletisim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .başlik h1 {
+        font-size: 40px;
+        align-items: center;
+        margin-left: 300px;
+    }
+    .form input[type=text]{
+        height: 30px;
+        width: 400px;
+        border-radius: 8px;
+    }
+    .form input[type=email]{
+        height: 30px;
+        width: 400px;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 500px) {
     .iletisim {
         display: flex;
         flex-direction: column;
@@ -530,10 +515,9 @@ input{
         width: 400px;
         border-radius: 8px;
     }
-    
     .form input[type=email]{
+        border-radius: 8px;
         height: 30px;
         width: 400px;
-        border-radius: 8px;
     }
 }
