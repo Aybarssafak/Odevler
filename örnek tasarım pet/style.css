@@ -102,15 +102,13 @@ input{
     display: flex;
     flex-direction: row;
     padding-top: 200px;
-    padding-left: 50px;
-    gap: 250px;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 10px;
 }
 
-.hosgeldiniz .baslik{
-    height: 200px;
-    width: 550px;
-    gap: 80px;
-}
+
 
 .hosgeldiniz .baslik h1{
     font-size: 50px;
@@ -121,7 +119,7 @@ input{
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-left: 100px;
+    justify-content: space-around;
     margin-top: 40px;
 }
 
@@ -150,42 +148,39 @@ input{
     background: #000;
     height: 300px;
     width: 450px;
-    margin-right: 100px;
 }
 
 @media (max-width: 1024px) {
     .hosgeldiniz{
-        gap: 50px;
+        justify-content: space-evenly;
+        margin-right: 20px;
+        margin-left: 20px;
+        gap: 10px;
     }
-    .hosgeldiniz .resim{
-        margin-right: 100px;
-    }
+
 }
 
 @media (max-width: 768px) {
     .hosgeldiniz{
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 50px;
+        align-items: center;
     }
-    .hosgeldiniz .baslik {
-        margin-left: 50px;
-    }
+
     .hosgeldiniz .resim{
-        margin-bottom: 50px;
-        margin-top: 50px;
-        margin-left: 70px;
+        justify-content: center;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .hosgeldiniz{
         display: flex;
         flex-direction: column;
-        width: 20px;
-    }
-    .hosgeldiniz .baslik {
-        width: 400px;
-        margin-left: 5px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .hosgeldiniz .baslik .butonlar {
@@ -196,7 +191,7 @@ input{
         margin-bottom: 50px;
         margin-top: 100px;
         margin-left: 10px;
-        width: 370px;
+        width: 300px;
         }
 }
 .logolar {
@@ -204,16 +199,9 @@ input{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center ;
-    margin-top: 50px;
+    margin-top: 100px;
     height: 70px;
     background: white;
-}
-@media (max-width: 480px) {
-    .logolar {
-        margin-top: 10px;
-        margin-bottom: 50px;
-        background: white;
-    }
 }
 
 .shop {
@@ -262,7 +250,7 @@ input{
 }
 
 .kedi h2 {
-    margin-left: 70px;
+    margin-left: 50px;
     margin-top: 40px;
     margin-right: 20px;
     font-size: 37px;
@@ -270,7 +258,7 @@ input{
 }
 
 .kedi p {
-    margin-left: 70px;
+    margin-left: 50px;
     margin-right: 20px;
     margin-top: 20px;
     color: white;
@@ -299,22 +287,24 @@ input{
         border-radius: 10px;
     }
 
+}
 
 
 @media (max-width: 768px) {
     .kedi {
         background: #E36414;
-        width: 500px;
+        width: 450px;
         height: 350px;
         border-radius: 10px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .kedi {
         background: #E36414;
-        width: 400px;
+        width: 350px;
         height: 400px;
+        margin-left: 130px;
         border-radius: 10px;
     }
 
@@ -336,7 +326,7 @@ input{
 }
 
 .kedimamasi h2 {
-    margin-left: 70px;
+    margin-left: 50px;
     margin-top: 40px;
     margin-right: 20px;
     font-size: 37px;
@@ -344,7 +334,7 @@ input{
 }
 
 .kedimamasi p {
-    margin-left: 70px;
+    margin-left: 50px;
     margin-right: 20px;
     margin-top: 20px;
     color: white;
@@ -377,17 +367,18 @@ input{
 @media (max-width: 768px) {
     .kedimamasi {
         background: #3c096c;
-        width: 500px;
+        width: 450px;
         height: 350px;
         border-radius: 10px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .kedimamasi {
         background: #3c096c;
-        width: 400px;
+        width: 350px;
         height: 400px;
+        margin-left: 130px;
         border-radius: 10px;
     }
 
