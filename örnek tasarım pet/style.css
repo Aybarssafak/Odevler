@@ -175,7 +175,7 @@ input{
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
     .hosgeldiniz{
         display: flex;
         flex-direction: column;
@@ -188,8 +188,8 @@ input{
     }
     
     .hosgeldiniz .resim {
-        margin-bottom: 50px;
-        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-top: 50px;
         margin-left: 10px;
         width: 300px;
         }
@@ -299,12 +299,11 @@ input{
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
     .kedi {
         background: #E36414;
         width: 350px;
         height: 400px;
-        margin-left: 130px;
         border-radius: 10px;
     }
 
@@ -373,12 +372,11 @@ input{
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
     .kedimamasi {
         background: #3c096c;
         width: 350px;
         height: 400px;
-        margin-left: 130px;
         border-radius: 10px;
     }
 
