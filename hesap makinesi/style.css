@@ -30,7 +30,7 @@
     width: 49px;
     
 }
-.hesap .sonuc{
+.hesap #sonuc{
     border-radius: 5px;
     height: 30px;
     width: 220px;
