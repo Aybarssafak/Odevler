@@ -1,0 +1,36 @@
+.hesap{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    display: flex;
+    gap: 5px;
+}
+
+.hesap .girdi{
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.hesap .girdi input{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+.hesap .butonlar{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+.hesap .butonlar button{
+    border-radius: 5px;
+    width: 49px;
+    height: 50px;
+}
+.hesap .sonuc{
+    border-radius: 5px;
+    height: 30px;
+    width: 220px;
+}
