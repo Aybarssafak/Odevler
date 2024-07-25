@@ -26,8 +26,9 @@
 }
 .hesap .butonlar button{
     border-radius: 5px;
-    width: 49px;
     height: 50px;
+    width: 49px;
+    
 }
 .hesap .sonuc{
     border-radius: 5px;
