@@ -1,0 +1,14 @@
+{
+    "products": [
+      { "id": 1, "title": "Ürün 1", "body": "Bu ürünün açıklaması 1." , "fiyat": "48$" , "satınal": "Satın Al" },
+      { "id": 2, "title": "Ürün 2", "body": "Bu ürünün açıklaması 2." , "fiyat": "65$" , "satınal": "Satın Al" },
+      { "id": 3, "title": "Ürün 3", "body": "Bu ürünün açıklaması 3." , "fiyat": "87$", "satınal": "Satın Al" },
+      { "id": 4, "title": "Ürün 4", "body": "Bu ürünün açıklaması 4.", "fiyat": "12$", "satınal": "Satın Al"},
+      { "id": 5, "title": "Ürün 5", "body": "Bu ürünün açıklaması 5.", "fiyat": "129$", "satınal": "Satın Al"},
+      { "id": 6, "title": "Ürün 6", "body": "Bu ürünün açıklaması 6.", "fiyat": "167$", "satınal": "Satın Al"},
+      { "id": 7, "title": "Ürün 7", "body": "Bu ürünün açıklaması 7.", "fiyat": "65$", "satınal": "Satın Al"},
+      { "id": 8, "title": "Ürün 8", "body": "Bu ürünün açıklaması 8.", "fiyat": "87$", "satınal": "Satın Al"},
+      { "id": 9, "title": "Ürün 9", "body": "Bu ürünün açıklaması 9.", "fiyat": "23$", "satınal": "Satın Al"}
+    ]
+  }
+  
