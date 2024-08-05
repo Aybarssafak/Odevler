@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Sistemi</title>
+</head>
+<body>
+    <h1>Kayıt Sistemi</h1>
+    <div class="kayit">
+        <form id="kisi-form" action="/kisiekle" method="post">
+            <input type="text" name="fullname" id="fllname-input" placeholder="İsminizi Girin.." required>
+            <input type="tel" name="tel" id="tel-input" placeholder="Telefonunuzu Girin.." required>
+            <input type="password" name="password" id="password-input" placeholder="Şifrenizi Girin.." required>
+            <button type="submit">Gönder</button>
+        </form>
+        <ul id="kişi-listesi"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
